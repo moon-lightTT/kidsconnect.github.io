@@ -2,10 +2,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
+  
   ssr: false,
   
   app: {
-    baseURL: '/kidsconnect.github.io/',
+
+    baseURL: '/',
+
+    
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -18,12 +22,29 @@ export default defineNuxtConfig({
     }
   },
   
+  routeRules: {
+    '/': { prerender: true },
+    '/search': { prerender: true },
+    '/section/1': { prerender: true },
+    '/section/2': { prerender: true },
+    '/section/3': { prerender: true },
+    '/section/4': { prerender: true },
+    '/section/5': { prerender: true },
+    '/section/6': { prerender: true },
+    '/section/7': { prerender: true },
+    '/section/8': { prerender: true },
+    '/section/9': { prerender: true },
+    '/section/10': { prerender: true },
+    '/section/11': { prerender: true }
+  },
+  
   nitro: {
     prerender: {
+      crawlLinks: true,
       routes: [
-        '/',           
-        '/search',    
-        '/section/1', 
+        '/',
+        '/search',
+        '/section/1',
         '/section/2',
         '/section/3',
         '/section/4',
@@ -33,13 +54,8 @@ export default defineNuxtConfig({
         '/section/8',
         '/section/9',
         '/section/10',
-        '/section/11' 
-      ],
-      crawlLinks: true
-    },
-    output: {
-      dir: 'dist'
+        '/section/11'
+      ]
     }
   }
-
 })

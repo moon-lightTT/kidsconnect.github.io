@@ -4,16 +4,14 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "predeploy": "npm run generate",
-    "deploy": "gh-pages -d dist"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "^3.20.2",
     "vue": "^3.5.25",
     "vue-router": "^4.6.4"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
