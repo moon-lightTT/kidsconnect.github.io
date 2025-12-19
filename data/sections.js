@@ -1,0 +1,217 @@
+export const lightSports = [
+  {
+    id: 1,
+    titleTop: 'Лёгкая атлетика',
+    category: 'light',
+    image: '/sections/1.png',
+    titleDown: ' (в Юбилейном мкр.)',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Лёгкая атлетика',
+    age: '10-18 лет',
+    address: 'г. Иркутск, Юбилейный мкр., стр. 49/1',
+    sectionName: 'ФОК "Юбилейный"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Вт, Чт, Сб',
+    timeSlots: ['8:00 - 10:00', '18:00 - 19:30']
+  }
+]
+
+export const strengthSports = [
+  {
+    id: 2,
+    titleTop: 'Тяжелая атлетика',
+    titleDown: ' (в Юбилейном мкр.)',
+    category: 'strength',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Тяжелая атлетика',
+    age: '10-18 лет',
+    address: 'г. Иркутск, Юбилейный мкр., стр. 49/1',
+    sectionName: 'ФОК "Юбилейный"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  },
+  {
+    id: 3,
+    titleTop: 'Тяжелая атлетика',
+    titleDown: ' (на ул. Боткина)',
+    category: 'strength',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceLes: 'Первое бесплатно',
+    priceClassLes: 'sport-price-lesson',
+    priceText: '500 руб',
+    priceClass: 'sport-price',
+    tag: '#Тяжелая атлетика',
+    age: '10-18 лет',
+    address: 'г. Иркутск, Юбилейный мкр., стр. 49/1',
+    sectionName: 'ФОК "Юбилейный"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30']
+  },
+  {
+    id: 4,
+    titleTop: 'Тяжелая атлетика',
+    titleDown: ' (на ул. Норильской)',
+    category: 'strength',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceLes: 'Первое бесплатно',
+    priceClassLes: 'sport-price-lesson',
+    priceText: '3200 руб. 8 занятий',
+    priceClass: 'sport-price',
+    tag: '#Тяжелая атлетика',
+    age: '10-18 лет',
+    address: 'г. Иркутск, Юбилейный мкр., стр. 49/1',
+    sectionName: 'ФОК "Юбилейный"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30']
+  },
+  {
+    id: 5,
+    titleTop: 'Пауэрлифтинг',
+    category: 'strength',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Пауэрлифтинг',
+    age: '10-18 лет',
+    address: 'г. Иркутск, Юбилейный мкр., стр. 49/1',
+    sectionName: 'ФОК "Юбилейный"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  }
+]
+
+export const martialArts = [
+  {
+    id: 6,
+    titleTop: 'Дзюдо',
+    category: 'martial',
+    subCategory: 'main',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  },
+  {
+    id: 7,
+    titleTop: 'Вольная борьба',
+    titleDown: ' (на ул. Норильская)',
+    category: 'martial',
+    subCategory: 'main',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceLes: 'Первое бесплатно',
+    priceClassLes: 'sport-price-lesson',
+    priceText: '3200 руб. месяц',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  }
+]
+export const martialArtsSecond = [
+  {
+    id: 8,
+    titleTop: 'Дзюдо',
+    category: 'martial',
+    subCategory: 'second',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  },
+  {
+    id: 9,
+    titleTop: 'Вольная борьба',
+    titleDown: ' (на ул. Норильская)',
+    category: 'martial',
+    subCategory: 'second',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: '3200 руб. месяц',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  } 
+]
+export const martialArtsThird = [
+  {
+    id: 10,
+    titleTop: 'Дзюдо',
+    category: 'martial',
+    subCategory: 'third',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceText: 'Бесплатно',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  },
+  {
+    id: 11,
+    titleTop: 'Вольная борьба',
+    titleDown: ' (на ул. Норильская)',
+    category: 'martial',
+    subCategory: 'third',
+    join: 'набор открыт',
+    joinClass: 'join-in',
+    priceLes: 'Первое бесплатно',
+    priceClassLes: 'sport-price-lesson',
+    priceText: '3200 руб. месяц',
+    priceClass: 'sport-price',
+    tag: '#Дзюдо',
+    age: '6-18 лет',
+    address: 'г Иркутск, ул Трудовая, д 115А',
+    sectionName: 'СК "Вымпэл"',
+    sectionLink: 'https://posleurokov.ru/irkutsk/61894',
+    scheduleDays: 'Пн, Ср, Пт',
+    timeSlots: ['9:00 - 10:30', '12:00 - 13:30', '18:00 - 19:30']
+  }
+]
+export const allCards = [
+  ...lightSports,
+  ...strengthSports,
+  ...martialArts,
+  ...martialArtsSecond,
+  ...martialArtsThird
+]
