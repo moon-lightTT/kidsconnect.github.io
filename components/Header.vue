@@ -2,7 +2,7 @@
   <header class="header">
     <div class="logo">
       <img 
-        :src="logoType === 'alternative' ? '/kidsconnect.github.io/logoAlt.svg' : '/kidsconnect.github.io/logo.svg'" 
+        :src="logoType === 'alternative' ? '/logoAlt.svg' : '/logo.svg'" 
         alt="logo" 
         class="logo-img"
       >
