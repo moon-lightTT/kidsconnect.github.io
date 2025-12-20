@@ -1,11 +1,8 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
   ssr: false,
-  modules: ['@nuxt/image'],
   
   app: {
     baseURL: '/kidsconnect.github.io/',
