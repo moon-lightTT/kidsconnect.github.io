@@ -1,0 +1,29 @@
+[33mc4fcd95[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m check
+[33m1b9d7c7[m check
+[33m18fc82d[m check
+[33mb690103[m check
+[33me9c615f[m check
+[33mf5263a9[m work
+[33md6f1013[m work
+[33m997ad38[m workflow
+[33m06980d7[m workflow and deploy
+[33m534a457[m workflow and deploy
+[33mc4afc86[m workflow and deploy
+[33m92d9cf0[m workflow and deploy
+[33m96760ac[m workflow and deploy
+[33m43f2e28[m workflow and deploy
+[33m379854c[m workflow and deploy
+[33mf417170[m workflow and deploy
+[33m81d68f2[m workflow and deploy
+[33m080856d[m workflow and deploy
+[33m2fa016b[m workflow and deploy
+[33me347e40[m add github workflow to deploy app
+[33ma3d8f7e[m add github workflow to deploy app
+[33md9eea16[m add github workflow to deploy app
+[33mde18fd4[m add github workflow to deploy app
+[33m654a524[m initial commit
+[33me9206b1[m Fix static file paths for GitHub Pages
+[33m1090a39[m Remove gh-pages and cleanup package.json
+[33m24b10b6[m Fix GitHub Pages deployment configuration
+[33m9deedaa[m Fix GitHub Pages deployment configuration
+[33mf0a6c6f[m Initial commit: Nuxt 3 project for GitHub Pages
