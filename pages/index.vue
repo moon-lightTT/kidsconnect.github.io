@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header logoType="default" />
   
   <div class="content-wrapper">
     <main class="main">
