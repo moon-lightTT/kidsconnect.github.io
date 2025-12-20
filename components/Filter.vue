@@ -35,7 +35,7 @@
                         {{ categories.sport.items.length }}
                     </span>
                 </span>
-                <img :src="categories.sport.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                <img :src="categories.sport.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                 alt="arrow" 
                 @click="toggleCatalog('sport')">
             </div>
@@ -53,7 +53,7 @@
                     {{ categories.martial.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.martial.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.martial.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('martial')">
                 </div>
@@ -71,7 +71,7 @@
                     {{ categories.craft.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.craft.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.craft.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('craft')">
                 </div>
@@ -89,7 +89,7 @@
                     {{ categories.constructor.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.constructor.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.constructor.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('constructor')">
                 </div>
@@ -107,7 +107,7 @@
                     {{ categories.word.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.word.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.word.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('word')">
                 </div>
@@ -125,7 +125,7 @@
                     {{ categories.language.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.language.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.language.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('language')">
                 </div>
@@ -143,7 +143,7 @@
                     {{ categories.intelligence.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.intelligence.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.intelligence.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('intelligence')">
                 </div>
@@ -161,7 +161,7 @@
                     {{ categories.information.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.information.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.information.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('information')">
                 </div>
@@ -179,7 +179,7 @@
                     {{ categories.history.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.history.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.history.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('history')">
                 </div>
@@ -197,7 +197,7 @@
                     {{ categories.pedagogy.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.pedagogy.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.pedagogy.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('pedagogy')">
                 </div>
@@ -215,7 +215,7 @@
                     {{ categories.music.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.music.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.music.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('music')">
                 </div>
@@ -233,7 +233,7 @@
                     {{ categories.song.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.song.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.song.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('song')">
                 </div>
@@ -251,7 +251,7 @@
                     {{ categories.dance.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.dance.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.dance.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('dance')">
                 </div>
@@ -269,7 +269,7 @@
                     {{ categories.art.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.art.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.art.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('art')">
                 </div>
@@ -287,7 +287,7 @@
                     {{ categories.fashion.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.fashion.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.fashion.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('fashion')">
                 </div>
@@ -305,7 +305,7 @@
                     {{ categories.entertainment.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.entertainment.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.entertainment.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('entertainment')">
                 </div>
@@ -323,7 +323,7 @@
                     {{ categories.tourism.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.tourism.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.tourism.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('tourism')">
                 </div>
@@ -341,7 +341,7 @@
                     {{ categories.nature.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.nature.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.nature.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('nature')">
                 </div>
@@ -359,7 +359,7 @@
                     {{ categories.people.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.people.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.people.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('people')">
                 </div>
@@ -377,7 +377,7 @@
                     {{ categories.aesthetics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.aesthetics.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.aesthetics.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('aesthetics')">
                 </div>
@@ -395,7 +395,7 @@
                     {{ categories.technique.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.technique.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.technique.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('technique')">
                 </div>
@@ -413,7 +413,7 @@
                     {{ categories.team.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.team.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.team.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('team')">
                 </div>
@@ -431,7 +431,7 @@
                     {{ categories.individual.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.individual.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.individual.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('individual')">
                 </div>
@@ -449,7 +449,7 @@
                     {{ categories.water.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.water.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.water.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('water')">
                 </div>
@@ -467,7 +467,7 @@
                     {{ categories.gymnastics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.gymnastics.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.gymnastics.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('gymnastics')">
                 </div>
@@ -485,7 +485,7 @@
                     {{ categories.physical.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.physical.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                    <img :src="categories.physical.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
                     alt="arrow" 
                     @click="toggleCatalog('physical')">
                 </div>
