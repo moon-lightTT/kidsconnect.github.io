@@ -134,6 +134,7 @@ body {
 .program-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .detailed-info-level {
@@ -469,6 +470,7 @@ body {
 .upDown {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .span-list:hover {
