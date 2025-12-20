@@ -13,11 +13,27 @@
 }
 
 .section-1 {
-  background-image: url('/sections/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../sections/1.png);
 }
 
-.section-2 {
-  background-image: url('/public/picture.svg');
+.section-2, .section-3,
+.section-4, .section-5, 
+.section-6, .section-7, 
+.section-8, .section-9, 
+.section-10, .section-11 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/public/picture.svg');
 }
 
 /* конец картинок */

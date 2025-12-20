@@ -1,7 +1,7 @@
 <template>
   <div class="main-inf">
     <div class="picture">
-      <img :src="image" :alt="titleTop + (titleDown || '')">
+      <div :class="['section-image', `section-${id}`]"></div>
     </div>
     <div class="inf">
       <div class="sport-type">
