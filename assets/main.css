@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* картинки */
 .logo-img.default {
   background-image: url('/logo.svg');
 }
@@ -12,6 +12,15 @@
   background-image: url('/logoAlt.svg');
 }
 
+.section-1 {
+  background-image: url('/sections/1.png');
+}
+
+.section-2 {
+  background-image: url('/public/picture.svg');
+}
+
+/* конец картинок */
 body {
     font-family: 'Montserrat', sans-serif;
     background: #fff;

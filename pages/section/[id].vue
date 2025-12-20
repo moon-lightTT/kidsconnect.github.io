@@ -24,7 +24,7 @@
               <h2 class="name-section">{{ section.titleTop }}{{ section.titleDown || '' }}</h2>
               <div class="main-inf-new">
                 <div class="picture">
-                  <img :src="section.image || '/picture.svg'" :alt="section.titleTop">
+                  <div :class="['section-image', `section-${section.id}`]"></div>
                 </div>
                 <div class="inf">
                   <div class="sport-type-section">
