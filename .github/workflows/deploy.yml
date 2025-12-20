@@ -15,13 +15,16 @@ jobs:
           node-version: "20"
           cache: 'npm'
       
-      - run: npm ci
-      - run: npm run generate  # Используем generate вместо build с пресетом
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Generate static site
+        run: npm run generate  # Это создаст .output/public
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Nuxt генерирует в ./dist при использовании generate
+          path: ./.output/public  # Правильный путь!
 
   deploy:
     needs: build
