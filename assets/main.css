@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.logo-img.default {
+  background-image: url('/logo.svg');
+}
+
+.logo-img.alternative {
+  background-image: url('/logoAlt.svg');
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #fff;
