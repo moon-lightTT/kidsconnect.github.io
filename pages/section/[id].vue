@@ -104,7 +104,10 @@
                       <span class="group-top">СОДЕРЖАНИЕ ПРОГРАММЫ</span>
                     </div>
                     <div>
-                      <img :src="program.open ? '/arrowUpLevel.svg' : '/arrowDownLevel.svg'" alt="arrow">
+                      <div 
+                        class="arrow-level-icon" 
+                        :class="{ 'arrow-up-level': program.open, 'arrow-down-level': !program.open }"
+                      ></div>
                     </div>
                   </div>
 
@@ -115,7 +118,10 @@
                           <span class="level-top">{{ program.levels.basic.title }}</span>
                         </div>
                         <div>
-                          <img :src="program.levels.basic.open ? '/arrowUpLevel.svg' : '/arrowDownLevel.svg'" alt="arrow">
+                          <div 
+                            class="arrow-level-icon" 
+                            :class="{ 'arrow-up-level': program.levels.basic.open, 'arrow-down-level': !program.levels.basic.open }"
+                          ></div>
                         </div>
                       </div>
 
@@ -139,7 +145,10 @@
                           <span class="level-top">{{ program.levels.advanced.title }}</span>
                         </div>
                         <div>
-                          <img :src="program.levels.advanced.open ? '/arrowUpLevel.svg' : '/arrowDownLevel.svg'" alt="arrow">
+                          <div 
+                            class="arrow-level-icon" 
+                            :class="{ 'arrow-up-level': program.levels.advanced.open, 'arrow-down-level': !program.levels.advanced.open }"
+                          ></div>
                         </div>
                       </div>
 

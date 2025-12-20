@@ -52,6 +52,21 @@
   background-image: url('/assets/arrowUp.svg');
 }
 
+.arrow-level-icon {
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.arrow-down-level {
+  background-image: url('/arrowDownLevel.svg');
+}
+
+.arrow-up-level {
+  background-image: url('/arrowUpLevel.svg');
+}
+
 /* конец картинок */
 body {
     font-family: 'Montserrat', sans-serif;
