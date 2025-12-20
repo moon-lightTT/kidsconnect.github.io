@@ -2,15 +2,8 @@
   <header class="header">
     <div class="logo">
       <img 
-        v-if="logoType === 'default'"
-        src="/logo.svg" 
-        alt="KidsConnect logo" 
-        class="logo-img"
-      >
-      <img 
-        v-else
-        src="/logoAlt.svg" 
-        alt="KidsConnect alternative logo" 
+        :src="logoType === 'alternative' ? '/logoAlt.svg' : '/logo.svg'" 
+        alt="logo" 
         class="logo-img"
       >
       <h1 class="text-logo">KidsConnect</h1>

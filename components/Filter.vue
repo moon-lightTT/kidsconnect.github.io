@@ -503,6 +503,15 @@
 
 <script setup>
 import { ref, reactive, watch } from 'vue'
+import { useStaticAssets } from '~/composables/useStaticAssets.js'
+
+const { getImage } = useStaticAssets()
+
+const arrowImage = computed(() => {
+  return categories.sport.open 
+    ? getImage('arrowUp.svg')
+    : getImage('arrowDown.svg')
+})
 
 const selectedAge = ref('')
 const emit = defineEmits(['filter-change'])
