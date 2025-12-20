@@ -16,6 +16,6 @@ const props = defineProps({
 
 const getLogoPath = (type) => {
   const filename = type === 'alternative' ? 'logoAlt.svg' : 'logo.svg'
-   return '/kidsconnect.github.io/' + filename
+   return '/' + filename
 }
 </script>
