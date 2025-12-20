@@ -1,20 +1,25 @@
 <template>
   <header class="header">
     <div class="logo">
-      <!-- Просто обычный img с абсолютным путем -->
       <img 
-        src="/logo.svg" 
-        alt="logo" 
-        class="logo-img"
         v-if="logoType === 'default'"
+        src="/logo.svg" 
+        alt="KidsConnect logo" 
+        class="logo-img"
       >
       <img 
-        src="/logoAlt.svg" 
-        alt="logo" 
-        class="logo-img"
         v-else
+        src="/logoAlt.svg" 
+        alt="KidsConnect alternative logo" 
+        class="logo-img"
       >
       <h1 class="text-logo">KidsConnect</h1>
     </div>
   </header>
 </template>
+
+<script setup>
+defineProps({
+  logoType: { type: String, default: 'default' }
+})
+</script>
