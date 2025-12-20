@@ -1,18 +1,25 @@
 <template>
   <header class="header">
     <div class="logo">
-      <img 
-        :src="logoType === 'alternative' ? '/logoAlt.svg' : '/logo.svg'" 
-        alt="logo" 
-        class="logo-img"
-      >
+      <div :class="['logo-img', logoType]"></div>
       <h1 class="text-logo">KidsConnect</h1>
     </div>
   </header>
 </template>
 
-<script setup>
-defineProps({
-  logoType: { type: String, default: 'default' }
-})
-</script>
+<style scoped>
+.logo-img {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-img.default {
+  background-image: url('/logo.svg');
+}
+
+.logo-img.alternative {
+  background-image: url('/logoAlt.svg');
+}
+</style>
