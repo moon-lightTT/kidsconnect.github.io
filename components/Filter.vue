@@ -35,9 +35,9 @@
                         {{ categories.sport.items.length }}
                     </span>
                 </span>
-                <img :src="categories.sport.open ? '/arrowUp.svg?v=1' : '/arrowDown.svg?v=1'">
-                alt="arrow" 
-                @click="toggleCatalog('sport')">
+                <svg width="12" height="8" :style="{transform: categories.sport.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('sport')">
+                  <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
             </div>
             <ul v-if="categories.sport.open" class="list">
                 <li v-for="item in categories.sport.items" :key="item" class="list-items">
@@ -53,9 +53,9 @@
                     {{ categories.martial.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.martial.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('martial')">
+                    <svg width="12" height="8" :style="{transform: categories.martial.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('martial')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.martial.open" class="list">
                     <li v-for="item in categories.martial.items" :key="item" class="list-items">
@@ -71,9 +71,9 @@
                     {{ categories.craft.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.craft.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('craft')">
+                    <svg width="12" height="8" :style="{transform: categories.craft.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('craft')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.craft.open" class="list">
                     <li v-for="item in categories.craft.items" :key="item" class="list-items">
@@ -89,9 +89,9 @@
                     {{ categories.constructor.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.constructor.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('constructor')">
+                    <svg width="12" height="8" :style="{transform: categories.constructor.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('constructor')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.constructor.open" class="list">
                     <li v-for="item in categories.constructor.items" :key="item" class="list-items">
@@ -107,9 +107,9 @@
                     {{ categories.word.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.word.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('word')">
+                    <svg width="12" height="8" :style="{transform: categories.word.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('word')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.word.open" class="list">
                     <li v-for="item in categories.word.items" :key="item" class="list-items">
@@ -125,9 +125,9 @@
                     {{ categories.language.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.language.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('language')">
+                    <svg width="12" height="8" :style="{transform: categories.language.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('language')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.language.open" class="list">
                     <li v-for="item in categories.language.items" :key="item" class="list-items">
@@ -143,9 +143,9 @@
                     {{ categories.intelligence.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.intelligence.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('intelligence')">
+                    <svg width="12" height="8" :style="{transform: categories.intelligence.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('intelligence')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.intelligence.open" class="list">
                     <li v-for="item in categories.intelligence.items" :key="item" class="list-items">
@@ -161,9 +161,9 @@
                     {{ categories.information.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.information.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('information')">
+                    <svg width="12" height="8" :style="{transform: categories.information.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('information')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.information.open" class="list">
                     <li v-for="item in categories.information.items" :key="item" class="list-items">
@@ -179,9 +179,9 @@
                     {{ categories.history.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.history.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('history')">
+                    <svg width="12" height="8" :style="{transform: categories.history.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('history')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.history.open" class="list">
                     <li v-for="item in categories.history.items" :key="item" class="list-items">
@@ -197,9 +197,9 @@
                     {{ categories.pedagogy.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.pedagogy.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('pedagogy')">
+                    <svg width="12" height="8" :style="{transform: categories.pedagogy.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('pedagogy')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.pedagogy.open" class="list">
                     <li v-for="item in categories.pedagogy.items" :key="item" class="list-items">
@@ -215,9 +215,9 @@
                     {{ categories.music.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.music.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('music')">
+                    <svg width="12" height="8" :style="{transform: categories.music.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('music')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.music.open" class="list">
                     <li v-for="item in categories.music.items" :key="item" class="list-items">
@@ -233,9 +233,9 @@
                     {{ categories.song.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.song.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('song')">
+                    <svg width="12" height="8" :style="{transform: categories.song.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('song')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.song.open" class="list">
                     <li v-for="item in categories.song.items" :key="item" class="list-items">
@@ -251,9 +251,9 @@
                     {{ categories.dance.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.dance.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('dance')">
+                    <svg width="12" height="8" :style="{transform: categories.dance.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('dance')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.dance.open" class="list">
                     <li v-for="item in categories.dance.items" :key="item" class="list-items">
@@ -269,9 +269,9 @@
                     {{ categories.art.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.art.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('art')">
+                    <svg width="12" height="8" :style="{transform: categories.art.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('art')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.art.open" class="list">
                     <li v-for="item in categories.art.items" :key="item" class="list-items">
@@ -287,9 +287,9 @@
                     {{ categories.fashion.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.fashion.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('fashion')">
+                    <svg width="12" height="8" :style="{transform: categories.fashion.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('fashion')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.fashion.open" class="list">
                     <li v-for="item in categories.fashion.items" :key="item" class="list-items">
@@ -305,9 +305,9 @@
                     {{ categories.entertainment.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.entertainment.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('entertainment')">
+                    <svg width="12" height="8" :style="{transform: categories.entertainment.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('entertainment')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.entertainment.open" class="list">
                     <li v-for="item in categories.entertainment.items" :key="item" class="list-items">
@@ -323,9 +323,9 @@
                     {{ categories.tourism.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.tourism.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('tourism')">
+                    <svg width="12" height="8" :style="{transform: categories.tourism.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('tourism')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.tourism.open" class="list">
                     <li v-for="item in categories.tourism.items" :key="item" class="list-items">
@@ -341,9 +341,9 @@
                     {{ categories.nature.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.nature.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('nature')">
+                    <svg width="12" height="8" :style="{transform: categories.nature.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('nature')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.nature.open" class="list">
                     <li v-for="item in categories.nature.items" :key="item" class="list-items">
@@ -359,9 +359,9 @@
                     {{ categories.people.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.people.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('people')">
+                    <svg width="12" height="8" :style="{transform: categories.people.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('people')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.people.open" class="list">
                     <li v-for="item in categories.people.items" :key="item" class="list-items">
@@ -377,9 +377,9 @@
                     {{ categories.aesthetics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.aesthetics.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('aesthetics')">
+                    <svg width="12" height="8" :style="{transform: categories.aesthetics.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('aesthetics')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.aesthetics.open" class="list">
                     <li v-for="item in categories.aesthetics.items" :key="item" class="list-items">
@@ -395,9 +395,9 @@
                     {{ categories.technique.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.technique.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('technique')">
+                    <svg width="12" height="8" :style="{transform: categories.technique.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('technique')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.technique.open" class="list">
                     <li v-for="item in categories.technique.items" :key="item" class="list-items">
@@ -413,9 +413,9 @@
                     {{ categories.team.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.team.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('team')">
+                    <svg width="12" height="8" :style="{transform: categories.team.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('team')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.team.open" class="list">
                     <li v-for="item in categories.team.items" :key="item" class="list-items">
@@ -431,9 +431,9 @@
                     {{ categories.individual.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.individual.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('individual')">
+                    <svg width="12" height="8" :style="{transform: categories.individual.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('individual')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.individual.open" class="list">
                     <li v-for="item in categories.individual.items" :key="item" class="list-items">
@@ -449,9 +449,9 @@
                     {{ categories.water.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.water.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('water')">
+                    <svg width="12" height="8" :style="{transform: categories.water.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('water')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.water.open" class="list">
                     <li v-for="item in categories.water.items" :key="item" class="list-items">
@@ -467,9 +467,9 @@
                     {{ categories.gymnastics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.gymnastics.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('gymnastics')">
+                    <svg width="12" height="8" :style="{transform: categories.gymnastics.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('gymnastics')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.gymnastics.open" class="list">
                     <li v-for="item in categories.gymnastics.items" :key="item" class="list-items">
@@ -485,9 +485,9 @@
                     {{ categories.physical.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.physical.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('physical')">
+                    <svg width="12" height="8" :style="{transform: categories.physical.open ? 'rotate(0deg)' : 'rotate(180deg)'}" @click="toggleCatalog('physical')">
+                      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
                 </div>
                 <ul v-if="categories.physical.open" class="list">
                     <li v-for="item in categories.physical.items" :key="item" class="list-items">
