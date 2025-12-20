@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="logo">
-      <img :src="getLogoPath(logoType)" 
+      <img :src="currentLogo" 
            alt="logo" 
            class="logo-img">
       <h1 class="text-logo">KidsConnect</h1>
@@ -10,12 +10,13 @@
 </template>
 
 <script setup>
+import logoDefault from '~/public/logo.svg'
+import logoAlt from '~/public/logoAlt.svg'
+
 const props = defineProps({
   logoType: { type: String, default: 'default' }
 })
-
-const getLogoPath = (type) => {
-  const filename = type === 'alternative' ? 'logoAlt.svg' : 'logo.svg'
-   return '/' + filename
-}
+const currentLogo = computed(() => {
+  return props.logoType === 'alternative' ? logoAlt : logoDefault
+})
 </script>
