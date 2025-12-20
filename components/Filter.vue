@@ -35,7 +35,7 @@
                         {{ categories.sport.items.length }}
                     </span>
                 </span>
-                <img :src="categories.sport.open ? '/arrowUp.svg' : '/arrowDown.svg'" 
+                <img :src="categories.sport.open ? '/arrowUp.svg?v=1' : '/arrowDown.svg?v=1'">
                 alt="arrow" 
                 @click="toggleCatalog('sport')">
             </div>
@@ -503,15 +503,6 @@
 
 <script setup>
 import { ref, reactive, watch } from 'vue'
-import { useStaticAssets } from '~/composables/useStaticAssets.js'
-
-const { getImage } = useStaticAssets()
-
-const arrowImage = computed(() => {
-  return categories.sport.open 
-    ? getImage('arrowUp.svg')
-    : getImage('arrowDown.svg')
-})
 
 const selectedAge = ref('')
 const emit = defineEmits(['filter-change'])
