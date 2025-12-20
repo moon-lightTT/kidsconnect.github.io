@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   
   app: {
+    baseURL: '/kidsconnect.github.io/',
     head: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
