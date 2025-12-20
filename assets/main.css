@@ -36,6 +36,22 @@
     background-image: url('/public/picture.svg');
 }
 
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.arrow-down {
+  background-image: url('/assets/arrowDown.svg');
+}
+
+.arrow-up {
+  background-image: url('/assets/arrowUp.svg');
+}
+
 /* конец картинок */
 body {
     font-family: 'Montserrat', sans-serif;

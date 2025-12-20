@@ -35,9 +35,11 @@
                         {{ categories.sport.items.length }}
                     </span>
                 </span>
-                <img :src="categories.sport.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                alt="arrow" 
-                @click="toggleCatalog('sport')">
+                <div 
+                  class="arrow-icon" 
+                  :class="{ 'arrow-up': categories.sport.open, 'arrow-down': !categories.sport.open }"
+                  @click="toggleCatalog('sport')"
+                ></div>
             </div>
             <ul v-if="categories.sport.open" class="list">
                 <li v-for="item in categories.sport.items" :key="item" class="list-items">
@@ -53,9 +55,11 @@
                     {{ categories.martial.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.martial.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('martial')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.martial.open, 'arrow-down': !categories.martial.open }"
+                      @click="toggleCatalog('martial')"
+                    ></div>
                 </div>
                 <ul v-if="categories.martial.open" class="list">
                     <li v-for="item in categories.martial.items" :key="item" class="list-items">
@@ -71,9 +75,11 @@
                     {{ categories.craft.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.craft.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('craft')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.craft.open, 'arrow-down': !categories.craft.open }"
+                      @click="toggleCatalog('craft')"
+                    ></div>
                 </div>
                 <ul v-if="categories.craft.open" class="list">
                     <li v-for="item in categories.craft.items" :key="item" class="list-items">
@@ -89,9 +95,11 @@
                     {{ categories.constructor.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.constructor.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('constructor')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.constructor.open, 'arrow-down': !categories.constructor.open }"
+                      @click="toggleCatalog('constructor')"
+                    ></div>
                 </div>
                 <ul v-if="categories.constructor.open" class="list">
                     <li v-for="item in categories.constructor.items" :key="item" class="list-items">
@@ -107,9 +115,11 @@
                     {{ categories.word.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.word.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('word')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.word.open, 'arrow-down': !categories.word.open }"
+                      @click="toggleCatalog('word')"
+                    ></div>
                 </div>
                 <ul v-if="categories.word.open" class="list">
                     <li v-for="item in categories.word.items" :key="item" class="list-items">
@@ -125,9 +135,11 @@
                     {{ categories.language.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.language.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('language')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.language.open, 'arrow-down': !categories.language.open }"
+                      @click="toggleCatalog('language')"
+                    ></div>
                 </div>
                 <ul v-if="categories.language.open" class="list">
                     <li v-for="item in categories.language.items" :key="item" class="list-items">
@@ -143,9 +155,11 @@
                     {{ categories.intelligence.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.intelligence.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('intelligence')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.intelligence.open, 'arrow-down': !categories.intelligence.open }"
+                      @click="toggleCatalog('intelligence')"
+                    ></div>
                 </div>
                 <ul v-if="categories.intelligence.open" class="list">
                     <li v-for="item in categories.intelligence.items" :key="item" class="list-items">
@@ -161,9 +175,11 @@
                     {{ categories.information.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.information.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('information')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.information.open, 'arrow-down': !categories.information.open }"
+                      @click="toggleCatalog('information')"
+                    ></div>
                 </div>
                 <ul v-if="categories.information.open" class="list">
                     <li v-for="item in categories.information.items" :key="item" class="list-items">
@@ -179,9 +195,11 @@
                     {{ categories.history.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.history.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('history')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.history.open, 'arrow-down': !categories.history.open }"
+                      @click="toggleCatalog('history')"
+                    ></div>
                 </div>
                 <ul v-if="categories.history.open" class="list">
                     <li v-for="item in categories.history.items" :key="item" class="list-items">
@@ -197,9 +215,11 @@
                     {{ categories.pedagogy.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.pedagogy.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('pedagogy')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.pedagogy.open, 'arrow-down': !categories.pedagogy.open }"
+                      @click="toggleCatalog('pedagogy')"
+                    ></div>
                 </div>
                 <ul v-if="categories.pedagogy.open" class="list">
                     <li v-for="item in categories.pedagogy.items" :key="item" class="list-items">
@@ -215,9 +235,11 @@
                     {{ categories.music.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.music.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('music')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.music.open, 'arrow-down': !categories.music.open }"
+                      @click="toggleCatalog('music')"
+                    ></div>
                 </div>
                 <ul v-if="categories.music.open" class="list">
                     <li v-for="item in categories.music.items" :key="item" class="list-items">
@@ -233,9 +255,11 @@
                     {{ categories.song.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.song.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('song')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.song.open, 'arrow-down': !categories.song.open }"
+                      @click="toggleCatalog('song')"
+                    ></div>
                 </div>
                 <ul v-if="categories.song.open" class="list">
                     <li v-for="item in categories.song.items" :key="item" class="list-items">
@@ -251,9 +275,11 @@
                     {{ categories.dance.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.dance.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('dance')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.dance.open, 'arrow-down': !categories.dance.open }"
+                      @click="toggleCatalog('dance')"
+                    ></div>
                 </div>
                 <ul v-if="categories.dance.open" class="list">
                     <li v-for="item in categories.dance.items" :key="item" class="list-items">
@@ -269,9 +295,11 @@
                     {{ categories.art.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.art.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('art')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.art.open, 'arrow-down': !categories.art.open }"
+                      @click="toggleCatalog('art')"
+                    ></div>
                 </div>
                 <ul v-if="categories.art.open" class="list">
                     <li v-for="item in categories.art.items" :key="item" class="list-items">
@@ -287,9 +315,11 @@
                     {{ categories.fashion.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.fashion.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('fashion')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.fashion.open, 'arrow-down': !categories.fashion.open }"
+                      @click="toggleCatalog('fashion')"
+                    ></div>
                 </div>
                 <ul v-if="categories.fashion.open" class="list">
                     <li v-for="item in categories.fashion.items" :key="item" class="list-items">
@@ -305,9 +335,11 @@
                     {{ categories.entertainment.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.entertainment.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('entertainment')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.entertainment.open, 'arrow-down': !categories.entertainment.open }"
+                      @click="toggleCatalog('entertainment')"
+                    ></div>
                 </div>
                 <ul v-if="categories.entertainment.open" class="list">
                     <li v-for="item in categories.entertainment.items" :key="item" class="list-items">
@@ -323,9 +355,11 @@
                     {{ categories.tourism.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.tourism.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('tourism')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.tourism.open, 'arrow-down': !categories.tourism.open }"
+                      @click="toggleCatalog('tourism')"
+                    ></div>
                 </div>
                 <ul v-if="categories.tourism.open" class="list">
                     <li v-for="item in categories.tourism.items" :key="item" class="list-items">
@@ -341,9 +375,11 @@
                     {{ categories.nature.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.nature.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('nature')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.nature.open, 'arrow-down': !categories.nature.open }"
+                      @click="toggleCatalog('nature')"
+                    ></div>
                 </div>
                 <ul v-if="categories.nature.open" class="list">
                     <li v-for="item in categories.nature.items" :key="item" class="list-items">
@@ -359,9 +395,11 @@
                     {{ categories.people.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.people.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('people')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.people.open, 'arrow-down': !categories.people.open }"
+                      @click="toggleCatalog('people')"
+                    ></div>
                 </div>
                 <ul v-if="categories.people.open" class="list">
                     <li v-for="item in categories.people.items" :key="item" class="list-items">
@@ -377,9 +415,11 @@
                     {{ categories.aesthetics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.aesthetics.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('aesthetics')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.aesthetics.open, 'arrow-down': !categories.aesthetics.open }"
+                      @click="toggleCatalog('aesthetics')"
+                    ></div>
                 </div>
                 <ul v-if="categories.aesthetics.open" class="list">
                     <li v-for="item in categories.aesthetics.items" :key="item" class="list-items">
@@ -395,9 +435,11 @@
                     {{ categories.technique.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.technique.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('technique')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.technique.open, 'arrow-down': !categories.technique.open }"
+                      @click="toggleCatalog('technique')"
+                    ></div>
                 </div>
                 <ul v-if="categories.technique.open" class="list">
                     <li v-for="item in categories.technique.items" :key="item" class="list-items">
@@ -413,9 +455,11 @@
                     {{ categories.team.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.team.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('team')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.team.open, 'arrow-down': !categories.team.open }"
+                      @click="toggleCatalog('team')"
+                    ></div>
                 </div>
                 <ul v-if="categories.team.open" class="list">
                     <li v-for="item in categories.team.items" :key="item" class="list-items">
@@ -431,9 +475,11 @@
                     {{ categories.individual.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.individual.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('individual')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.individual.open, 'arrow-down': !categories.individual.open }"
+                      @click="toggleCatalog('individual')"
+                    ></div>
                 </div>
                 <ul v-if="categories.individual.open" class="list">
                     <li v-for="item in categories.individual.items" :key="item" class="list-items">
@@ -449,9 +495,11 @@
                     {{ categories.water.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.water.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('water')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.water.open, 'arrow-down': !categories.water.open }"
+                      @click="toggleCatalog('water')"
+                    ></div>
                 </div>
                 <ul v-if="categories.water.open" class="list">
                     <li v-for="item in categories.water.items" :key="item" class="list-items">
@@ -467,9 +515,11 @@
                     {{ categories.gymnastics.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.gymnastics.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('gymnastics')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.gymnastics.open, 'arrow-down': !categories.gymnastics.open }"
+                      @click="toggleCatalog('gymnastics')"
+                    ></div>
                 </div>
                 <ul v-if="categories.gymnastics.open" class="list">
                     <li v-for="item in categories.gymnastics.items" :key="item" class="list-items">
@@ -485,9 +535,11 @@
                     {{ categories.physical.items.length }}
                     </span>
                     </span>
-                    <img :src="categories.physical.open ? '/assets/arrowUp.svg' : '/assets/arrowDown.svg'" 
-                    alt="arrow" 
-                    @click="toggleCatalog('physical')">
+                    <div 
+                      class="arrow-icon" 
+                      :class="{ 'arrow-up': categories.physical.open, 'arrow-down': !categories.physical.open }"
+                      @click="toggleCatalog('physical')"
+                    ></div>
                 </div>
                 <ul v-if="categories.physical.open" class="list">
                     <li v-for="item in categories.physical.items" :key="item" class="list-items">
@@ -495,7 +547,6 @@
                     </li>
                 </ul>
         </div>
-        
       </div>
     </div>
   </div>
